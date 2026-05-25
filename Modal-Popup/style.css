@@ -1,13 +1,12 @@
 .modal{
     display: none;
-
     position: fixed;
 
-
+    top: 0;
+    left: 0;
     
-
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
 
     background: rgba(0, 0, 0, 0.5);
 
@@ -25,7 +24,16 @@
     width: 300px;
 
     position: relative;
+
+    animation:  aparecer 0.3s;
 }
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
 
 #close-modal{
     position: absolute;
@@ -36,4 +44,17 @@
     cursor: pointer;
 
     font-size: 20px;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to{
+        opacity: 1;
+
+        transform: scale(1);
+    }
 }
