@@ -1,0 +1,30 @@
+.slider{
+    width: 600px;
+    margin: 40px auto;
+
+    position: relative;
+}
+
+.slider img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.controls{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    transform: translateY(-50%);
+}
+
+.controls button{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
